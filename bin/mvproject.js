@@ -3,14 +3,16 @@
 var shell = require("shelljs");
 var colors = require( 'colors' );
 
-var getArgs = require( "../utils/get_args.js" );
-var config = require( '../config.js' );
+var config = require( '../config.js' )
+    , getArgs = require( "../utils/get_args.js" )
+    , printf = require( "../utils/printf.js" )
+    ;
 
 var cmd_args = getArgs( process );
 
 //shell.exec("echo command from mvproject");
 
-console.dir( cmd_args );
+//console.dir( cmd_args );
 
 var isQnpm = shell.which( "qnpm" );
 
@@ -29,4 +31,4 @@ if( cmd_args.length ){
     cmd_args[1].toString().length && ( arg = cmd_args[1] );
 }
 
-console.log( cmd, arg );
+console.log( printf( 'cmd: {0}, arg: {1}', cmd, arg ) );
