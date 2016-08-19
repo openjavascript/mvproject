@@ -3,26 +3,34 @@
   "version": "1.0.2",
   "description": "",
   "main": "index.js",
+  "dependencies": {
+    "color": "^0.11.3",
+    "shelljs": "^0.7.3"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "ls": "ls",
-    "patch-release": "npm version patch && npm publish && git push --follow-tags"
+    "patch-release": "npm version patch && npm publish && git push --follow-tags",
+    "build": "...",
+    "git-commit": "git add -A . && git commit -a -m 'gh-pages update'",
+    "git-push": "git push origin gh-pages --force && git checkout master",
+    "deploy": "npm run build && npm run git-commit && npm run git-push",
+    "bin": {
+      "gcommit": "bin/commit.js"
+    }
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/openjavascript/mvproject.git"
   },
   "keywords": [
-    "mvproject",
-    "mv"
+    "mvproject"
   ],
   "author": "suches <suches@btbtd.com> (http://btbtd.com)",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/openjavascript/mvproject/issues"
   },
-  "homepage": "https://github.com/openjavascript/mvproject#readme",
-  "dependencies": {
-    "color": "^0.11.3"
-  }
+  "homepage": "https://github.com/openjavascript/mvproject#readme"
 }
