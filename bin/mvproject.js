@@ -12,7 +12,7 @@ var args = getArgs( process );
 
 console.dir( args );
 
-var isQnpm = shell.which( "qnpm111" );
+var isQnpm = shell.which( "qnpm" );
 
 //console.dir( config );
 
