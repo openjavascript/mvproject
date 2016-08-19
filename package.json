@@ -1,6 +1,6 @@
 {
   "name": "mvproject",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "main": "index.js",
   "dependencies": {
@@ -17,9 +17,9 @@
     "git-push": "git push origin gh-pages --force && git checkout master",
     "deploy": "npm run build && npm run git-commit && npm run git-push",
     "bin": {
-      "gcommit": "bin/gcommit.js"
-     ,  "gpush": "bin/gpush.js"
-     ,  "gdeploy": "bin/gdeploy.js"
+      "gcommit": "bin/gcommit.js",
+      "gpush": "bin/gpush.js",
+      "gdeploy": "bin/gdeploy.js"
     }
   },
   "repository": {
