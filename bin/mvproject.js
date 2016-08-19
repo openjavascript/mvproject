@@ -23,5 +23,5 @@ require( '../app/update.js' )( Evt );
 require( '../app/check_env.js' )( Evt );
 
 console.dir( config );
-console.log( printf( 'cmd: {0}, arg: {1}', cmd, arg ) );
+console.log( printf( 'cmd: {0}, arg: {1}', cmd, arg ).blue );
 
