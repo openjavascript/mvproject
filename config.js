@@ -1,8 +1,9 @@
 
 module.exports = {
     debug: true
-    , npm: 'qnpm'
-
+    , shell: {
+        npm: 'qnpm'
+    }
 
     , cmd: {
         'update': 'update'
