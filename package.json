@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "color": "^0.11.3",
+    "colors": "^1.1.2",
     "shelljs": "^0.7.3"
   },
   "devDependencies": {},
