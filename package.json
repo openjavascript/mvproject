@@ -9,18 +9,10 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "ls": "ls",
-    "patch-release": "npm version patch && npm publish && git push --follow-tags",
-    "build": "...",
-    "git-commit": "git add -A . && git commit -a -m 'gh-pages update'",
-    "git-push": "git push origin gh-pages --force && git checkout master",
-    "deploy": "npm run build && npm run git-commit && npm run git-push"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "gcommit": "bin/gcommit.js",
-    "gpush": "bin/gpush.js",
-    "gdeploy": "bin/gdeploy.js"
+    "mvproject": "bin/mvproject.js"
   },
   "repository": {
     "type": "git",

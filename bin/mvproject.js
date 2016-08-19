@@ -2,4 +2,4 @@
 
 var shell = require("shelljs");
 
-shell.exec("gcommit && gpush");
+shell.exec("echo command from mvproject");
