@@ -8,5 +8,6 @@ module.exports = {
 
     , "cmd": {
         "update": "onUpdate"
+        , "build": "onBuild"
     }
 };

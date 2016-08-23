@@ -23,8 +23,9 @@ if( cmd_args.length ){
     }
 }
 
-require( '../app/update.js' )( Evt );
 require( '../app/check_env.js' )( Evt );
+require( '../app/update.js' )( Evt );
+require( '../app/build.js' )( Evt );
 
 /*
 console.dir( config );
