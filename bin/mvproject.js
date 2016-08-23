@@ -5,8 +5,8 @@ var events = require('events')
     , shell = require("shelljs")
     , colors = require( 'colors' )
 
-    , Config = require( '../config.js' )
-    , Const = require('../app/const.js')
+    , Config = require( '../common/config.js' )
+    , Const = require('../common/const.js')
     , printf = require( "../utils/printf.js" )
     , getArgs = require( "../utils/get_args.js" )
     ;
