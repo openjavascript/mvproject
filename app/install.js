@@ -52,7 +52,14 @@ module.exports = function( Evt ){
         }
 
         //console.log( printf( 'unzip {0} -d {1}', filepath, dir ) );
-        shell.exec( printf( 'unzip -o {0} -d {1}', filepath, dir ) );
+        var unzipstd = shell.exec( printf( 'unzip -o {0} -d {1}', filepath, dir ) );
+        //console.log( unzipstd.stdout.green );
+        var output_dir = '';
+        unzipstd.stdout.replace( /(\/.*?\-master\/)/, function($0, $1){
+            output_dir = $1;
+        });
+        output_dir = ( output_dir || '' ).trim();
+        console.log( 'output_dir: ', output_dir );
 
 
         /*
