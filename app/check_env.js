@@ -14,8 +14,8 @@ module.exports = function( Evt ){
 
     var isQnpm = shell.which( "qnpm" );
     if( !isQnpm ){
-        config.shell.npm = 'npm';
-        console.log( ' 为了提高安装速度, 请安装 qnpm 环境: http://qnpm.qiwoo.org/help/qnpm, \n npm install -g @q/qnpm --registry=http://registry.npm.qiwoo.org'.yellow );
+        Config.shell.npm = 'npm';
+        console.log( ' 由于国外网络较慢, 为了提高下载速度,\n 请安装 qnpm 环境: http://qnpm.qiwoo.org/help/qnpm, \n npm install -g @q/qnpm --registry=http://registry.npm.qiwoo.org'.yellow );
         Evt.emit( Const.notify.qnpm_not_installed );
     }
 
