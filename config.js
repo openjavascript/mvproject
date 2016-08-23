@@ -1,11 +1,15 @@
 
 module.exports = {
-    debug: true
-    , shell: {
-        npm: 'qnpm'
+
+    "debug": true
+
+    , "shell": {
+        "npm": 'qnpm'
+        , "bower": 'bower'
     }
 
-    , cmd: {
-        'update': 'update'
+    , "params": {
+        "silent": { "silent": true }
     }
+
 };

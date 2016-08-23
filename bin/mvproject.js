@@ -1,19 +1,21 @@
 #! /usr/bin/env node
 
-var events = require('events');
-var Evt = new events.EventEmitter();
-var Const = require('../app/const.js');
+var events = require('events')
+    , Evt = new events.EventEmitter()
+    , shell = require("shelljs")
+    , colors = require( 'colors' )
 
-var shell = require("shelljs");
-var colors = require( 'colors' );
-
-var config = require( '../config.js' )
-    , getArgs = require( "../utils/get_args.js" )
+    , Config = require( '../config.js' )
+    , Const = require('../app/const.js')
     , printf = require( "../utils/printf.js" )
+    , getArgs = require( "../utils/get_args.js" )
     ;
 
-var cmd_args = getArgs( process );
-var cmd = '', args = [];
+var cmd_args = getArgs( process )
+    , cmd = ''
+    , args = []
+    ;
+
 if( cmd_args.length ){
     cmd = cmd_args[ 0 ];
     if( cmd_args.length > 1 ){
@@ -33,4 +35,3 @@ cmd
     && ( cmd in Const.cmd )
     && Evt.emit( Const.cmd [ cmd ], args )
     ;
-

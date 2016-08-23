@@ -1,10 +1,12 @@
 
 module.exports = {
-    'teste': 'teste'
+    "teste": "teste"
 
-    , 'qnpm_not_installed': 'qnpm_not_installed'
+    , "notify": {
+        "qnpm_not_installed": "qnpm_not_installed"
+    }
 
-    , 'cmd': {
-        update: 'onUpdate'
+    , "cmd": {
+        "update": "onUpdate"
     }
 };
