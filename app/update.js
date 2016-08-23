@@ -19,4 +19,11 @@ module.exports = function( Evt ){
     });
     */
 
+    Evt.on( Const.cmd.update, function( _arg ){
+        //console.log( 'handler from Const.cmd.update', _arg );
+
+        var output = shell.exec( 'pwd', { silent: true }  );
+        //console.log( 'manual', output.stdout );
+    });
+
 };

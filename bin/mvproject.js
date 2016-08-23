@@ -13,15 +13,24 @@ var config = require( '../config.js' )
     ;
 
 var cmd_args = getArgs( process );
-var cmd = '', arg = '';
+var cmd = '', args = [];
 if( cmd_args.length ){
     cmd = cmd_args[ 0 ];
-    cmd_args[1].toString().length && ( arg = cmd_args[1] );
+    if( cmd_args.length > 1 ){
+        args = cmd_args.slice( 1 );
+    }
 }
 
 require( '../app/update.js' )( Evt );
 require( '../app/check_env.js' )( Evt );
 
+/*
 console.dir( config );
 console.log( printf( 'cmd: {0}, arg: {1}', cmd, arg ).blue );
+*/
+
+cmd 
+    && ( cmd in Const.cmd )
+    && Evt.emit( Const.cmd [ cmd ], args )
+    ;
 
