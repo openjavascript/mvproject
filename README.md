@@ -19,3 +19,18 @@
 
 使用: `mvproject build`
 
+### install
+
+安装项目初始化方案, 默认值: webpack1
+
+使用: `mvproject install [project name]`
+
+例子: `mvproject install webpack1`
+
+#### install 已有的配置方案
+
+1. webpack1: 方案1说明
+1. webpack2: 方案2说明
+1. webpack3: 方案3说明
+1. webpack4: 方案4说明
+1. webpack5: 方案5说明
