@@ -26,3 +26,8 @@
 使用: `mvproject install [project name]`
 
 例子: `mvproject install webpack1`
+
+#### install 已有的配置方案
+
+##### webpack1
+默认方案
