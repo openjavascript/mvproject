@@ -9,5 +9,6 @@ module.exports = {
     , "cmd": {
         "update": "onUpdate"
         , "build": "onBuild"
+        , "install": "onInstall"
     }
 };

@@ -26,6 +26,7 @@ if( cmd_args.length ){
 require( '../app/check_env.js' )( Evt );
 require( '../app/update.js' )( Evt );
 require( '../app/build.js' )( Evt );
+require( '../app/install.js' )( Evt );
 
 /*
 console.dir( config );
