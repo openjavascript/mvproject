@@ -9,7 +9,7 @@
 
 ### update
 
-更新 bower.json 和 package.json(更新 npm 将优先使用 qnpm环境,如果有的话...)
+更新 bower.json 和 package.json(更新 npm 模块将优先使用 qnpm 更新源环境,如果有的话...)
 
 使用: `mvproject update`
 
