@@ -29,5 +29,8 @@
 
 #### install 已有的配置方案
 
-##### webpack1
-默认方案
+1. webpack1: 方案1说明
+1. webpack2: 方案2说明
+1. webpack3: 方案3说明
+1. webpack4: 方案4说明
+1. webpack5: 方案5说明
