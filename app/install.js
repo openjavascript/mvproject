@@ -21,6 +21,7 @@ module.exports = function( Evt ){
             //, isBower = shell.test( '-e', printf( '{0}/bower.json', dir ) )
             , project = 'webpack1'
             , url
+            , filepath = printf( '{0}/mvproject_tmp.zip', dir )
             ;
 
         _arg.length && ( project = _arg.join('') );
@@ -31,7 +32,28 @@ module.exports = function( Evt ){
             return;
         }
         console.log( printf( 'installing project: {0}', project ).blue );
-        console.log( url );
+
+
+        if( !shell.which( 'wget' ) ){
+            console.log( 'wget not exists, please install wget:\nsudo yum install wget'.yellow );
+            return;
+        }
+
+        if( shell.test( '-e', filepath ) ){
+            shell.rm( '-f', filepath );
+        }
+
+        shell.exec( printf( 'wget {0} -O {1}', url, filepath ) );
+
+
+        if( !shell.which( 'unzip' ) ){
+            console.log( 'unzip not exists, please install unzip:\nsudo yum install unzip'.yellow );
+            return;
+        }
+
+        //console.log( printf( 'unzip {0} -d {1}', filepath, dir ) );
+        shell.exec( printf( 'unzip -o {0} -d {1}', filepath, dir ) );
+
 
         /*
         if( isBower ){
