@@ -2,9 +2,9 @@
 开发环境初始化工具
 
 
-# 命令
+## 命令
 
-## update
+### update
 
 更新 bower.json 和 package.json
 
