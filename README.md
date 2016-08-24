@@ -31,9 +31,21 @@ web前端开发环境初始化工具
 
 1. webpack1: 方案1说明
     
-  安装源: https://github.com/openjavascript/mvproject.project.webpack1/tree/master
+  安装源: https://github.com/openjavascript/mvproject.project.webpack1
 
 1. webpack2: 方案2说明
+    
+  安装源: https://github.com/openjavascript/mvproject.project.webpack2
+
 1. webpack3: 方案3说明
+    
+  安装源: https://github.com/openjavascript/mvproject.project.webpack3
+
 1. webpack4: 方案4说明
+    
+  安装源: https://github.com/openjavascript/mvproject.project.webpack4
+
 1. webpack5: 方案5说明
+    
+  安装源: https://github.com/openjavascript/mvproject.project.webpack5
+
