@@ -22,6 +22,7 @@ module.exports = function( Evt ){
             , project = 'webpack1'
             , url
             , filepath = printf( '{0}/mvproject_tmp.zip', dir )
+            , tmp
             ;
 
         _arg.length && ( project = _arg.join('') );
@@ -59,16 +60,18 @@ module.exports = function( Evt ){
             output_dir = $1;
         });
         output_dir = ( output_dir || '' ).trim();
-        console.log( 'output_dir: ', output_dir );
+        //console.log( 'output_dir: ', output_dir.blue );
 
-
-        /*
-        if( isBower ){
-            tmp = printf( '{0} install --force', Config.shell.bower );
-            console.log( printf( 'update bower with cmd: {0}' , tmp ).blue );
-            shell.exec( tmp  );
+        if( !output_dir ){
+            console.log( printf( 'output_dir not found' ).red );
+            return;
         }
-        */
+
+        tmp =  printf( 'mv -f {0}* {1}', output_dir, dir  ); 
+        shell.exec( tmp );
+
+        shell.exec( printf( 'rm -rf {0}', output_dir ) );
+        shell.exec( printf( 'rm -rf {0}', filepath ) );
 
     });
 
