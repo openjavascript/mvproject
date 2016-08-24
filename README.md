@@ -29,7 +29,7 @@ web前端开发环境初始化工具
 
 #### install 已有的配置方案
 
-1. webpack1: 方案1说明
+1. webpack1: webpack + HtmlWebpackPlugin(动态模板)
     
   安装源: https://github.com/openjavascript/mvproject.project.webpack1
 
