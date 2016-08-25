@@ -1,6 +1,6 @@
 {
   "name": "mvproject",
-  "version": "1.0.19",
+  "version": "1.0.20",
   "description": "",
   "main": "app/index.js",
   "dependencies": {
@@ -12,9 +12,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "mvproject": "bin/mvproject.js"
-    , "mvp": "bin/mvproject.js"
-    , "mpt": "bin/mvproject.js"
+    "mvproject": "bin/mvproject.js",
+    "mvp": "bin/mvproject.js",
+    "mpt": "bin/mvproject.js"
   },
   "repository": {
     "type": "git",
