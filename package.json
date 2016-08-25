@@ -13,6 +13,8 @@
   },
   "bin": {
     "mvproject": "bin/mvproject.js"
+    , "mvp": "bin/mvproject.js"
+    , "mpt": "bin/mvproject.js"
   },
   "repository": {
     "type": "git",
