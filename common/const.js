@@ -4,6 +4,7 @@ module.exports = {
 
     , "notify": {
         "qnpm_not_installed": "qnpm_not_installed"
+        , "install_done": "on_install_done"
     }
 
     , "cmd": {

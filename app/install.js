@@ -78,7 +78,12 @@ module.exports = function( Evt ){
             //shell.exec( printf( 'cd {0} && mvproject update', dir ) );
             Evt.emit( Const.cmd.update );
             Evt.emit( Const.cmd.stc );
+            Evt.emit( Const.notify.install_done );
         }
+    });
+
+    Evt.on( Const.notify.install_done, function( _arg ){
+        console.log( 'mvproject job is done.' );
     });
 
 };
