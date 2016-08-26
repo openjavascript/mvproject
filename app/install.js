@@ -74,7 +74,7 @@ module.exports = function( Evt ){
         shell.exec( printf( 'rm -rf {0}', filepath ) );
 
         if( shell.which( 'mvproject' ) ){
-            console.log( printf( 'init npm and bower components, {0}', Const.msg.taketime ).blue );
+            //console.log( printf( 'init npm and bower components, {0}', Const.msg.taketime ).blue );
             //shell.exec( printf( 'cd {0} && mvproject update', dir ) );
             Evt.emit( Const.cmd.update );
             Evt.emit( Const.cmd.stc );
