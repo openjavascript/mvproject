@@ -24,13 +24,13 @@ module.exports = function( Evt ){
 
         if( isNpm ){
             tmp = printf( '{0} install', Config.shell.npm );
-            console.log( printf( 'update npm with cmd: {0}' , tmp ).blue );
+            console.log( printf( 'update npm with cmd: {0}, {1}', tmp, Const.msg.taketime ).blue );
             shell.exec( tmp /*, Config.params.silent*/ );
         }
 
         if( isBower ){
             tmp = printf( '{0} install --force', Config.shell.bower );
-            console.log( printf( 'update bower with cmd: {0}' , tmp ).blue );
+            console.log( printf( 'update bower with cmd: {0}, {1}', tmp, Const.msg.taketime ).blue );
             shell.exec( tmp /*, Config.params.silent*/ );
         }
 

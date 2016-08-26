@@ -11,4 +11,8 @@ module.exports = {
         , "build": "onBuild"
         , "install": "onInstall"
     }
+
+    , "msg": {
+        "taketime": "this may take a few minutes"
+    }
 };
