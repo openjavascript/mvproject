@@ -33,19 +33,19 @@ web前端开发环境初始化工具
     
   安装源: https://github.com/openjavascript/mvproject.project.webpack1
 
-1. webpack2: 方案2说明
+1. webpack2: 开发中...
     
   安装源: https://github.com/openjavascript/mvproject.project.webpack2
 
-1. webpack3: 方案3说明
+1. webpack3: 开发中...
     
   安装源: https://github.com/openjavascript/mvproject.project.webpack3
 
-1. webpack4: 方案4说明
+1. webpack4: 开发中...
     
   安装源: https://github.com/openjavascript/mvproject.project.webpack4
 
-1. webpack5: 方案5说明
+1. webpack5: 开发中...
     
   安装源: https://github.com/openjavascript/mvproject.project.webpack5
 
