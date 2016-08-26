@@ -18,6 +18,7 @@ module.exports = function( Evt ){
         var dir = shell.pwd().stdout
             , isExists = shell.test( '-e', printf( '{0}/../stc', dir ) )
             , tmp
+            , filepath = printf( '{0}/stc_tmp.zip', dir )
             ;
 
         //console.log( 'stc isExists', isExists );
@@ -25,16 +26,22 @@ module.exports = function( Evt ){
             console.log( 'stc is exists'.blue );
             return;
         }
-        console.log( Config.files.stc );
-        console.log( 'zip is exists', shell.test( '-e', printf( '{0}', Config.files.stc ) ) );
-        /*
-        if( canBuild ){
-            tmp = printf( 'bash build.sh' );
-            console.log( printf( 'build with cmd: {0}' , tmp ).blue );
-            shell.exec( tmp [>, Config.params.silent<] );
-        }else{
-            console.log( printf( 'file not found: {0}/build.sh' , dir ).blue );
-        }*/
+        if( !shell.test( '-e', filepath ) ){
+            console.log( printf( 'get stc.zip, {0}', Const.msg.taketime ).blue );
+            shell.exec( printf( 'wget {0} -O {1}', Config.files.stc, filepath ) );
+        }
+
+        tmp = shell.exec( printf( 'stat -c %s {0}', filepath ), Config.params.silent );
+        tmp = parseInt( tmp.stdout.replace( /[^\d]/g, '' ) );
+
+        if( !tmp ){
+            shell.exec( printf( 'rm -rf {0}', filepath ) );
+            console.log( 'get stc.zip failed'.red );
+            return;
+        }
+
+        shell.exec( printf( 'unzip {0} -d {1}/../stc', filepath, dir ) );
+        shell.exec( printf( 'rm -rf {0}', filepath ) );
 
     });
 
