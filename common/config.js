@@ -12,4 +12,8 @@ module.exports = {
         "silent": { "silent": true }
     }
 
+    , "files": {
+        "stc": "http://pub.qsw.skycamp.cn/files/stc.zip"
+    }
+
 };

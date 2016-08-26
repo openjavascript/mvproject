@@ -10,6 +10,7 @@ module.exports = {
         "update": "onUpdate"
         , "build": "onBuild"
         , "install": "onInstall"
+        , "stc": "onInitStc"
     }
 
     , "msg": {
