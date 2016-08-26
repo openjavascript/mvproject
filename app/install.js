@@ -83,7 +83,8 @@ module.exports = function( Evt ){
     });
 
     Evt.on( Const.notify.install_done, function( _arg ){
-        console.log( 'mvproject job is done.' );
+        console.log( '\nmvproject job is done.\n'.blue );
+        console.log( 'at this time you may type:',  'webpack --watch'.blue, 'for do something~' );
     });
 
 };
