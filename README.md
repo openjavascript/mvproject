@@ -13,7 +13,17 @@ web前端开发环境初始化工具
 
 使用: `mvproject install [project name]`
 
-例子: `mvproject install webpack1`
+例子: 
+`
+#创建项目目录
+mkdir project.com
+
+#切换到项目目录
+cd project.com
+
+#初始化项目
+mvproject install webpack1
+`
 
 #### install 已有的配置方案
 
