@@ -1,7 +1,7 @@
 # mvproject
 web前端开发环境初始化工具
 
-## 通用 NPM 安装
+## 通过 NPM 安装 mvproject
 
 `sudo npm install -g mvproject`
 
