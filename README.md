@@ -48,3 +48,9 @@ web前端开发环境初始化工具
 通过燕尾服发布脚本(build.sh)发布静态内容到CDN
 
 使用: `mvproject build`
+
+### stc
+
+安装stc编译环境, 只在内网可用, 该命令会判断当前目录的上级目录是否有 stc 目录, 如果没用会自动下载并安装stc环境
+
+使用: `mvproject stc`
