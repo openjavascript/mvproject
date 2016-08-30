@@ -44,7 +44,7 @@ module.exports = function( Evt ){
             shell.rm( '-f', filepath );
         }
 
-        shell.exec( printf( 'wget {0} -O {1}', url, filepath ) );
+        shell.exec( printf( 'wget {0}?rnd={2} -O {1}', url, filepath, new Date().getTime() ) );
 
 
         if( !shell.which( 'unzip' ) ){
