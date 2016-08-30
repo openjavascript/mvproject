@@ -30,7 +30,7 @@ web前端开发环境初始化工具
     
   安装源: https://github.com/openjavascript/mvproject.project.webpack1
 
-1. webpack2: 开发中...
+1. webpack2: webpack + HtmlWebpackPlugin(动态模板) + css less(动态css)
     
   安装源: https://github.com/openjavascript/mvproject.project.webpack2
 
