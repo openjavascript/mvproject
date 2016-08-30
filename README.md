@@ -21,6 +21,9 @@ web前端开发环境初始化工具
 
 初始化项目方案: `mvproject install webpack1`
 
+执行webpack处理: `webpack --watch`  
+*如果没用安装 webpack请先安装webpack: `sudo npm install -g webpack`*
+
 #### install 已有的配置方案
 
 1. webpack1: webpack + HtmlWebpackPlugin(动态模板)
