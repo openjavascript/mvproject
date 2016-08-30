@@ -9,8 +9,14 @@ module.exports = {
 
     , "cmd": {
         "update": "onUpdate"
+        , "up": "onUpdate"
+
         , "build": "onBuild"
+        , "bu": "onBuild"
+
         , "install": "onInstall"
+        , "ins": "onInstall"
+
         , "stc": "onInitStc"
     }
 
