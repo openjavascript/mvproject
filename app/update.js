@@ -20,7 +20,7 @@ module.exports = function( Evt ){
             , isNpm = shell.test( '-e', printf( '{0}/package.json', dir ) )
             , tmp
             ;
-        console.log( dir, isBower, isNpm );
+        //console.log( dir, isBower, isNpm );
 
         if( isNpm ){
             tmp = printf( '{0} install', Config.shell.npm );
