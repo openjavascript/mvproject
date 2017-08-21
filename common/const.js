@@ -3,7 +3,7 @@ module.exports = {
     "teste": "teste"
 
     , "notify": {
-        "qnpm_not_installed": "qnpm_not_installed"
+        "cnpm_not_installed": "cnpm_not_installed"
         , "install_done": "on_install_done"
     }
 

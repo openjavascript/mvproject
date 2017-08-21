@@ -4,7 +4,7 @@ module.exports = {
     "debug": true
 
     , "shell": {
-        "npm": 'qnpm'
+        "npm": 'cnpm'
         , "bower": 'bower'
     }
 

@@ -12,11 +12,11 @@ var events = require('events')
 module.exports = function( Evt ){
     if( !Evt ) return;
 
-    var isQnpm = shell.which( "qnpm" );
-    if( !isQnpm ){
+    var iscnpm = shell.which( "cnpm" );
+    if( !iscnpm ){
         Config.shell.npm = 'npm';
-        console.log( ' 由于国外网络较慢, 为了提高下载速度,\n 请安装 qnpm 环境: http://qnpm.qiwoo.org/help/qnpm, \n npm install -g @q/qnpm --registry=http://registry.npm.qiwoo.org'.yellow );
-        Evt.emit( Const.notify.qnpm_not_installed );
+        console.log( ' 由于国外网络较慢, 为了提高下载速度,\n 请安装 cnpm 环境: https://npm.taobao.org/, \n npm install -g cnpm --registry=https://registry.npm.taobao.org'.yellow );
+        Evt.emit( Const.notify.cnpm_not_installed );
     }
 
 };
